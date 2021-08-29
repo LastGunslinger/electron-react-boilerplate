@@ -1,0 +1,15 @@
+{
+	"$schema": "https://raw.githubusercontent.com/facebookexperimental/fb-vscode/master/extensions/configuration-editing/schemas/devContainer.schema.json",
+	"name": "Electron React Boilerplate",
+	"dockerComposeFile": [
+		"../docker-compose.yml"
+	],
+	"service": "electron",
+	"workspaceFolder": "/workspace",
+	"extensions": [
+		"dbaeumer.vscode-eslint",
+		"editorconfig.editorconfig",
+		"eamodio.gitlens",
+		"pkief.material-icon-theme"
+	]
+}

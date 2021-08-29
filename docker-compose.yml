@@ -1,0 +1,18 @@
+version: '3.7'
+services:
+  electron:
+    network_mode: host
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        NODE_VERSION: 14
+        USERNAME: node
+    volumes:
+      - type: bind
+        source: .
+        target: /workspace
+        consistency: consistent
+    tty: true
+    user: node
+    working_dir: /workspace
